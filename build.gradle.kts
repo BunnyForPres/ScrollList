@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+<<<<<<<< HEAD:build.gradle.kts
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id("com.android.application") version "8.8.0" apply false
@@ -20,3 +21,17 @@ plugins {
     id("org.jetbrains.kotlin.android") version "2.1.0" apply false
     id("org.jetbrains.kotlin.plugin.compose") version "2.1.0" apply false
 }
+========
+package com.example.affirmations.model
+
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+/**
+ * [Affirmation] is the data class to represent the Affirmation text and imageResourceId
+ */
+data class Affirmation(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int
+)
+>>>>>>>> origin/main:app/src/main/java/com/example/affirmations/model/Affirmation.kt
